@@ -62,13 +62,13 @@ In addition to tokenization, this lexical analyzer also performs basic error det
 ### Example
 
 ```
-Input  : int x = 089;
-Output : Error → Invalid octal constant
+Input  : int x = 0877;
+Output : Error : invalid suffix "8" on integer constant
 ```
 
 ```
 Input  : if (a > b {
-Output : Error → Missing closing parenthesis
+Output : Error :  Missing of '{'
 ```
 
 These validations improve source code analysis and demonstrate enhanced lexical processing capability.
